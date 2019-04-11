@@ -1,0 +1,27 @@
+{
+  "name": "kiosk-status-server",
+  "version": "1.0.0",
+  "description": "Serve command output via http and proxy",
+  "main": "index.js",
+  "bin": {
+    "kiosk-status-server": "bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regular/kiosk-status-server.git"
+  },
+  "keywords": [],
+  "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/regular/kiosk-status-server/issues"
+  },
+  "homepage": "https://github.com/regular/kiosk-status-server#readme",
+  "dependencies": {
+    "http-proxy": "^1.17.0",
+    "minimist": "^1.2.0"
+  }
+}
