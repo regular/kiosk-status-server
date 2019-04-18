@@ -30,11 +30,13 @@ module.exports = function(port, routes, cb) {
     
     const {proxyURL, command, args, options} = route
     if (proxyURL) {
+      res.setHeader('Access-Control-Allow-Origin', '*')
       return proxy.web(req, res, {target: proxyURL, ignorePath: true})
     }
     
     console.log('Running:', command, args)
     res.setHeader('Content-Type', 'text/plain')
+    res.setHeader('Access-Control-Allow-Origin', '*')
     const p = spawn(command, args, options || {})
     p.stdout.pipe(res, {end: false})
     let exited = false
