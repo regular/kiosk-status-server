@@ -1,6 +1,6 @@
 {
   "name": "kiosk-status-server",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Serve command output via http and proxy",
   "main": "index.js",
   "bin": {
